@@ -103,7 +103,7 @@ const App = () => {
               onClick={handleCopy}
               title="Click to visit the URL or copy"
             >
-              {res}
+              https://tinytrail-backend.onrender.com/{res}
             </a>
             {copySuccess && <span className="text-green-600 mt-2 block">{copySuccess}</span>}
           </div>
