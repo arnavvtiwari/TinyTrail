@@ -14,7 +14,7 @@ const App = () => {
     e.preventDefault();
     setIsSubmitted(true);
     try {
-      const response = await fetch('http://localhost:3000/url', {
+      const response = await fetch('https://tinytrail-backend.onrender.com/url', {
         method: 'POST',
         headers: {
           'content-type': 'application/json',
@@ -96,7 +96,7 @@ const App = () => {
           >
             <h2 className="font-semibold text-indigo-700">Shortened URL</h2>
             <a
-              href={`http://localhost:3000/${res}`} // The URL redirection
+              href={`https://tinytrail-backend.onrender.com/${res}`} // The URL redirection
               target="_blank"
               rel="noopener noreferrer"
               className="text-indigo-900 font-mono mt-2 break-words cursor-pointer hover:underline"
